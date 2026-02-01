@@ -11,10 +11,10 @@
 /xaero
 
 /config/**
+!/config/xaerohud.txt
 !/config/xaero
 !/config/xaero/minimap
 !/config/xaero/minimap/profiles
-!/config/xaero/minimap/profiles/default.cfg
 !/config/xaero/minimap/profiles/entity_radar_categories
 !/config/xaero/minimap/profiles/entity_radar_categories/default.cfg.json
 
