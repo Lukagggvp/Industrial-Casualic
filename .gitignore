@@ -13,12 +13,20 @@
 /config/**
 !/config/industrialupgrade-common.toml
 !/config/xaerohud.txt
+!/config/starterkit.json5
+
+!/config/starterkit
+!/config/starterkit/kits
+!/config/starterkit/kits/Default.txt
+
 !/config/xaero
 !/config/xaero/minimap
 !/config/xaero/minimap/profiles
 !/config/xaero/minimap/profiles/entity_radar_categories
 !/config/xaero/minimap/profiles/entity_radar_categories/default.cfg.json
 
+/command_history.txt
 /.vscode
 /usercache.json
 /usernamecache.json
+/XaeroWaypoints*
