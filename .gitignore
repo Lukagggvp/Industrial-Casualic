@@ -13,7 +13,6 @@
 /config/**
 !/config/xaero
 !/config/xaero/minimap
-!/config/xaero/minimap/default_radar_categories_server.json
 
 /.vscode
 /usercache.json
