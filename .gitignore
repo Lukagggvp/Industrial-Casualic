@@ -1,5 +1,20 @@
 /saves
 /.curseclient
 /minecraftinstance.json
+/logs
+/local
+/downloads
+/.mixin.out
+/defaultconfigs
+/kubejs/README.txt
+/ftbbackups3
+/xaero
+
+/config/**
+!/config/xaero
+!/config/xaero/minimap
+!/config/xaero/minimap/default_radar_categories_client.json
 
 /.vscode
+/usercache.json
+/usernamecache.json
