@@ -11,6 +11,7 @@
 /xaero
 
 /config/**
+!/config/industrialupgrade-common.toml
 !/config/xaerohud.txt
 !/config/xaero
 !/config/xaero/minimap

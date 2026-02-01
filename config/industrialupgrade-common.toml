@@ -1,0 +1,142 @@
+["Generation ores"]
+	#Enable approximately default ore generation (false = vein system)
+	defaultSpawnEnabled = false
+
+[Mechanisms]
+	#Enable cooldown for mechanisms (false = no cooldown)
+	cooldownEnabled = true
+
+[General]
+	#Maximum amount of ore in a vein
+	# Default: 30000
+	# Range: > 1
+	maxVein = 30000
+	#Maximum amount of mb in a gas vein (not natural gas)
+	# Default: 200000
+	# Range: > 1
+	gasMaxVein = 200000
+	#Chance to get a gas vein (not natural gas)
+	# Default: 25
+	# Range: 1 ~ 100
+	gasChance = 25
+	#Additional chance if biome is hill
+	# Default: 25
+	# Range: 0 ~ 100
+	hillChanceBonus = 25
+	#Chance penalty for taiga or snowy biomes
+	# Default: 15
+	# Range: 0 ~ 100
+	taigaSnowyChancePenalty = 15
+	#Base chance threshold
+	# Default: 15
+	# Range: 0 ~ 100
+	baseChance = 15
+	#Chance (in %) to NOT generate gas vein
+	# Default: 85
+	# Range: 0 ~ 100
+	gasRollChance = 85
+	#Gas vein capacity
+	# Default: 600000
+	# Range: > 1
+	gasVeinMaxCol = 600000
+
+["Information Text"]
+	#Informational text when logging the game
+	enable = false
+
+["Oil Vein"]
+	#Chance % for oil vein in desert
+	# Default: 65
+	# Range: 0 ~ 100
+	desertChance = 65
+	# Default: 250000
+	# Range: > 0
+	desertMin = 250000
+	# Default: 1000000
+	# Range: > 0
+	desertMax = 1000000
+	# Default: 60
+	# Range: 0 ~ 100
+	oceanChance = 60
+	# Default: 250000
+	# Range: > 0
+	oceanMin = 250000
+	# Default: 750000
+	# Range: > 0
+	oceanMax = 750000
+	# Default: 65
+	# Range: 0 ~ 100
+	deepOceanChance = 65
+	# Default: 150000
+	# Range: > 0
+	deepOceanMin = 150000
+	# Default: 500000
+	# Range: > 0
+	deepOceanMax = 500000
+	# Default: 50
+	# Range: 0 ~ 100
+	riverChance = 50
+	# Default: 100000
+	# Range: > 0
+	riverMin = 100000
+	# Default: 250000
+	# Range: > 0
+	riverMax = 250000
+	# Default: 50
+	# Range: 0 ~ 100
+	savannaChance = 50
+	# Default: 150000
+	# Range: > 0
+	savannaMin = 150000
+	# Default: 500000
+	# Range: > 0
+	savannaMax = 500000
+	# Default: 11
+	# Range: 0 ~ 100
+	defaultChance = 11
+	# Default: 0
+	# Range: > 0
+	defaultMin = 0
+	# Default: 300000
+	# Range: > 0
+	defaultMax = 300000
+
+[VillagerProfessions]
+	#Enable registration of ALL custom villager professions
+	enableAllProfessions = true
+	enableEngineer = true
+	enableMechanic = true
+	enableNuclear = true
+	enableMetallurg = true
+	enableChemist = true
+	enableBotanist = true
+
+[TransformerMode]
+	#Transformer mode enabled
+	TransformerMode = true
+	#Unchecking the tier
+	enableUnchecking = false
+	#Unlimiting the conduction of energy in the cable
+	cableUnlimiting = false
+	#Enable explosion from mechanisms if transformer mode is on
+	enableExplosion = true
+	#Enable lose energy in cables if transformer mode is on
+	enableLosing = true
+
+[pollution]
+	#Air pollution
+	airPollution = true
+	#Soil pollution
+	soilPollution = true
+
+["Pressure Network"]
+	#Remove the pressure level restriction in the pressure system (allows machines to work at any pressure level)
+	pressureRestriction = true
+
+[Radiation]
+	#Enable damage from radiation chunk
+	radiationDamageEnabled = true
+	#Enable radiation chunks generation
+	radiationChunksEnabled = true
+	#Enable radiation accumulation on the player
+	radiationAccumulationEnabled = true
