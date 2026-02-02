@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "03A1D52BE8FF8563"
+	group: ""
+	icon: {
+		id: "industrialupgrade:crafting_elements/crafting_24_element"
+	}
+	id: "03A1D52BE8FF8563"
+	order_index: 6
+	quest_links: [ ]
+	quests: [ ]
+}

@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "592BD624603E7831"
+	group: ""
+	icon: {
+		id: "industrialupgrade:crafting_elements/crafting_620_element"
+	}
+	id: "592BD624603E7831"
+	order_index: 7
+	quest_links: [ ]
+	quests: [ ]
+}

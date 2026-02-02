@@ -1,0 +1,6 @@
+[*]
+background:ftblibrary:textures/gui/background_squares.png; color= #A0999999; tile_size=64
+chapter_panel_background:hollow_rectangle:{{widget_border}}; round_edges + {{background}}; color= #999999; padding=1
+
+selected_chapter_highlight_1: #101010
+selected_chapter_highlight_2: #202020
