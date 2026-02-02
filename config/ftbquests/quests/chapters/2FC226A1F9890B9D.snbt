@@ -1,15 +1,15 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "730DA11BD1F46D75"
+	filename: "2FC226A1F9890B9D"
 	group: ""
-	id: "730DA11BD1F46D75"
-	order_index: 2
+	id: "2FC226A1F9890B9D"
+	order_index: 8
 	quest_links: [ ]
 	quests: [{
-		id: "30776C9212109FAF"
+		id: "0634C39748C8AD6D"
 		tasks: [{
-			id: "4D87D2561F610C5F"
+			id: "016B94659914EED4"
 			type: "checkmark"
 		}]
 		x: 0.0d

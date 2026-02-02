@@ -2,10 +2,18 @@
 	chapter.002F08C22108C638.title: "&#937544П&#9b7d48р&#a4844dи&#ac8c51м&#b39257и&#b9985dт&#bf9e63и&#bf9e63в&#b9985dн&#b39257а&#ac8c51я &#a4844dэ&#9b7d48р&#937544а"
 	chapter.0210EC3CBB7E584E.title: "Основная информация"
 	chapter.03A1D52BE8FF8563.title: "&#c4009cС&#cc00abо&#d300baв&#db00caе&#e200d9р&#ea00e8ш&#f100f7е&#ed00ffн&#dc00ffн&#cc00ffа&#bb00ffя &#ab00ffэ&#9a00ffл&#8a00ffе&#9a00ffк&#ab00ffт&#bb00ffр&#cc00ffи&#dc00ffч&#ed00ffе&#f100f7с&#ea00e8к&#e200d9а&#db00caя &#d300baэ&#cc00abр&#c4009cа"
+	chapter.2FC226A1F9890B9D.title: "Магазин"
 	chapter.364FF0765A7E41AB.title: "&#c46600У&#cd7b00л&#d69000у&#dfa600ч&#e8bb00ш&#f1d000е&#fae500н&#ffe900н&#ffdb00н&#ffcd00а&#ffbe00я &#ffb000э&#ffa200л&#ff9400е&#ffa200к&#ffb000т&#ffbe00р&#ffcd00и&#ffdb00ч&#ffe900е&#fae500с&#f1d000к&#e8bb00а&#dfa600я &#d69000э&#cd7b00р&#c46600а"
 	chapter.592BD624603E7831.title: "&#00c404Ф&#07ce03о&#0ed903т&#15e302о&#1ced01н&#23f701н&#2cff00а&#3cff00я &#4cff00э&#5cff00л&#6cff00е&#7cff00к&#7cff00т&#6cff00р&#5cff00и&#4cff00ч&#3cff00е&#2cff00с&#23f701к&#1ced01а&#15e302я &#0ed903э&#07ce03р&#00c404а"
 	chapter.652F261328BB2098.title: "&#aaaaaaБ&#b4b4b5а&#bdbfbfз&#c7c9caо&#d1d3d4в&#dadedfа&#e2e6e6я &#e8ebebэ&#eef0f0л&#f3f5f5е&#f9fafaк&#ffffffт&#f9fafaр&#f3f5f5и&#eef0f0ч&#e8ebebе&#e2e6e6с&#dadedfк&#d1d3d4а&#c7c9caя &#bdbfbfэ&#b4b4b5р&#aaaaaaа"
 	chapter.6731ABDEC6124288.title: "&#2400c4П&#1e18cdр&#192fd6о&#1347dfд&#0e5ee8в&#0876f1и&#038dfaн&#00a1ffу&#00b1feт&#00c0fdа&#00d0fcя &#00e0fcэ&#00effbл&#00fffaе&#00effbк&#00e0fcт&#00d0fcр&#00c0fdи&#00b1feч&#00a1ffе&#038dfaс&#0876f1к&#0e5ee8а&#1347dfя &#192fd6э&#1e18cdр&#2400c4а"
 	chapter.730DA11BD1F46D75.title: "&#9f8f69П&#ae9f7dа&#bcb092р&#cec2a6о&#e0d5b9в&#e0d5b9а&#cec2a6я &#bcb092э&#ae9f7dр&#9f8f69а"
 	file.0000000000000001.title: "&#00c404I&#09d203n&#13e002d&#1cee01u&#26fc00s&#38ff00t&#4eff00r&#64ff00i&#79ff00a&#79ff00l &#64ff00C&#4eff00a&#38ff00s&#26fc00u&#1cee01a&#13e002l&#09d203i&#00c404c"
+	quest.50D603BA72F01035.quest_desc: [
+		"Добро пожаловать, игрок!"
+		"Данная сборка является ±казуальным облегчением для IU, где начальный этап более облегчён и продуман, чтобы тебе, новому игроку, не захотелось после 10 походов в шахту закрыть Майнкрафт от бесконечной нехватки ресурсов."
+		"Квесты же являются более продуманной версией квестов из оригинального IU с наградами и магазином."
+	]
+	quest.50D603BA72F01035.quest_subtitle: "IU – Industrial Upgrade"
+	quest.50D603BA72F01035.title: "Добро пожаловать!"
 }

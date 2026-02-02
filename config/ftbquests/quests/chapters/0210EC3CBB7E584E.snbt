@@ -6,5 +6,47 @@
 	id: "0210EC3CBB7E584E"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			icon: {
+				components: {
+					"industrialupgrade:container": {
+						listItem: [ ]
+						open: 1b
+						slot_inventory: 0
+						uid: 325964828
+					}
+					"industrialupgrade:mode": 2146696936
+				}
+				id: "industrialupgrade:book/guide_book"
+			}
+			id: "50D603BA72F01035"
+			tasks: [{
+				id: "5E0656F3B1611CE6"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50D603BA72F01035"]
+			id: "60F783C9B2C9EC11"
+			tasks: [{
+				id: "5CF7A040C908F6A8"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60F783C9B2C9EC11"]
+			id: "3AD10CD33E6EE78F"
+			tasks: [{
+				id: "6518F05AB638FBC3"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+	]
 }
