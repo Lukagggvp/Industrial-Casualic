@@ -9,6 +9,7 @@
 /kubejs/README.txt
 /ftbbackups3
 /xaero
+/screenshots
 
 /config/**
 !/config/industrialupgrade-common.toml
