@@ -3,6 +3,18 @@
 	default_quest_shape: ""
 	filename: "0210EC3CBB7E584E"
 	group: ""
+	icon: {
+		components: {
+			"industrialupgrade:container": {
+				listItem: [ ]
+				open: 1b
+				slot_inventory: 0
+				uid: 325964828
+			}
+			"industrialupgrade:mode": 2142633944
+		}
+		id: "industrialupgrade:book/guide_book"
+	}
 	id: "0210EC3CBB7E584E"
 	order_index: 0
 	quest_links: [ ]
@@ -21,6 +33,7 @@
 				id: "industrialupgrade:book/guide_book"
 			}
 			id: "50D603BA72F01035"
+			shape: "square"
 			tasks: [{
 				id: "5E0656F3B1611CE6"
 				type: "checkmark"
@@ -30,23 +43,91 @@
 		}
 		{
 			dependencies: ["50D603BA72F01035"]
-			id: "60F783C9B2C9EC11"
+			icon: {
+				components: {
+					"ftbquests:icon": "ftblibrary:icons/cancel"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "7FFD1D60D7B6766B"
 			tasks: [{
-				id: "5CF7A040C908F6A8"
+				id: "46763497FB0A2178"
 				type: "checkmark"
 			}]
-			x: 1.5d
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["50D603BA72F01035"]
+			icon: {
+				id: "industrialupgrade:heavyore/calaverite"
+			}
+			id: "42D7601FD3233FFE"
+			tasks: [{
+				id: "2153EC00878D919D"
+				type: "checkmark"
+			}]
+			x: 2.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["60F783C9B2C9EC11"]
-			id: "3AD10CD33E6EE78F"
+			dependencies: ["50D603BA72F01035"]
+			icon: {
+				id: "industrialupgrade:blockbasalts/basalt_magma"
+			}
+			id: "68C6C5666F60E2FA"
 			tasks: [{
-				id: "6518F05AB638FBC3"
+				id: "21C73774F660BFCB"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: 0.0d
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["50D603BA72F01035"]
+			icon: {
+				id: "industrialupgrade:blockresource/peat"
+			}
+			id: "19F91836D6A56CE0"
+			tasks: [{
+				id: "2140347FED71AE61"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["50D603BA72F01035"]
+			icon: {
+				id: "industrialupgrade:sapling/rubber_sapling"
+			}
+			id: "67F36AB1441756A4"
+			tasks: [{
+				id: "7FBE21AFB94EAEE9"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["50D603BA72F01035"]
+			icon: {
+				components: {
+					"industrialupgrade:bee": 3
+					"industrialupgrade:genome_bee": {
+						traits_ordinals: [ ]
+					}
+					"industrialupgrade:swarm": 30
+				}
+				id: "industrialupgrade:jar_bee/bees"
+			}
+			id: "4D7B65173B2FC92E"
+			tasks: [{
+				id: "00E55396CC314F94"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 2.0d
 		}
 	]
 }
