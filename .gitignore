@@ -26,6 +26,9 @@
 !/config/xaero/minimap/profiles/entity_radar_categories
 !/config/xaero/minimap/profiles/entity_radar_categories/default.cfg.json
 
+!/config/ftbquests**
+/config/ftbquests-client.snbt
+
 /command_history.txt
 /.vscode
 /usercache.json
