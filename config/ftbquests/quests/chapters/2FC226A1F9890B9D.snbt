@@ -3,6 +3,12 @@
 	default_quest_shape: ""
 	filename: "2FC226A1F9890B9D"
 	group: ""
+	icon: {
+		components: {
+			"ftbquests:icon": "ftbquests:textures/gui/shop.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
 	id: "2FC226A1F9890B9D"
 	order_index: 8
 	quest_links: [ ]

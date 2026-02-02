@@ -102,14 +102,14 @@
 	defaultMax = 300000
 
 [VillagerProfessions]
+	enableNuclear = false
+	enableChemist = false
+	enableMechanic = false
+	enableMetallurg = false
+	enableBotanist = false
+	enableEngineer = false
 	#Enable registration of ALL custom villager professions
 	enableAllProfessions = true
-	enableEngineer = true
-	enableMechanic = true
-	enableNuclear = true
-	enableMetallurg = true
-	enableChemist = true
-	enableBotanist = true
 
 [TransformerMode]
 	#Transformer mode enabled

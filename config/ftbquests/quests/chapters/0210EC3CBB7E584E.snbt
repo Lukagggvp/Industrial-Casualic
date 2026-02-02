@@ -16,6 +16,14 @@
 		id: "industrialupgrade:book/guide_book"
 	}
 	id: "0210EC3CBB7E584E"
+	images: [{
+		height: 8.0d
+		image: "industrialupgrade:item/excitedcore/advcore"
+		rotation: 0.0d
+		width: 8.0d
+		x: 0.0d
+		y: 0.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -126,7 +134,94 @@
 				id: "00E55396CC314F94"
 				type: "checkmark"
 			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["50D603BA72F01035"]
+			icon: {
+				components: {
+					"ftbquests:icon": "ftbquests:textures/gui/info.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "54A3D91AC03317DC"
+			tasks: [{
+				id: "5B1CB4F9BC0E5C4D"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["50D603BA72F01035"]
+			icon: {
+				components: {
+					"industrialupgrade:crop": 26
+					"industrialupgrade:genome_crop": {
+						traits_ordinals: [ ]
+					}
+				}
+				id: "industrialupgrade:crops/crop"
+			}
+			id: "744E85F96177DF01"
+			tasks: [{
+				id: "5E4F705E1F6235FE"
+				type: "checkmark"
+			}]
 			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["50D603BA72F01035"]
+			icon: {
+				id: "minecraft:emerald"
+			}
+			id: "189CE50BA488E7F3"
+			tasks: [{
+				id: "333650B5E65094A6"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50D603BA72F01035"]
+			icon: {
+				id: "sophisticatedbackpacks:backpack"
+			}
+			id: "20DC928F66E28DF7"
+			tasks: [{
+				id: "5072719A3FBEDA45"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["50D603BA72F01035"]
+			icon: {
+				id: "ironchest:diamond_chest"
+			}
+			id: "1AFF64CD50D6161E"
+			tasks: [{
+				id: "2A67AFCEEDBDB5E1"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["50D603BA72F01035"]
+			icon: {
+				id: "enderchests:ender_chest"
+			}
+			id: "78CCA86E44A6EC7D"
+			tasks: [{
+				id: "26D66560B5E6380F"
+				type: "checkmark"
+			}]
+			x: -1.0d
 			y: 2.0d
 		}
 	]
