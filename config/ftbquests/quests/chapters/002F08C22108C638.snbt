@@ -59,22 +59,13 @@
 					item: { count: 1, id: "minecraft:furnace" }
 					type: "item"
 				}
+				{
+					count: 4L
+					id: "1CB25E071A845134"
+					item: { count: 1, id: "minecraft:charcoal" }
+					type: "item"
+				}
 			]
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"6CA009DDB65B9935"
-				"172EB2CDAAA751D8"
-			]
-			id: "7F24E9377FABB04F"
-			tasks: [{
-				count: 4L
-				id: "793754662B9233FC"
-				item: { count: 1, id: "minecraft:charcoal" }
-				type: "item"
-			}]
 			x: 2.0d
 			y: 2.0d
 		}
@@ -122,7 +113,7 @@
 				}
 			]
 			x: 2.0d
-			y: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["168242D747533141"]
@@ -134,7 +125,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -169,7 +160,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["7F24E9377FABB04F"]
+			dependencies: ["6CA009DDB65B9935"]
 			id: "4E43C4BF501D9B90"
 			tasks: [
 				{
@@ -187,6 +178,71 @@
 			]
 			x: 4.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["172EB2CDAAA751D8"]
+			id: "1AE9421C32D00843"
+			tasks: [
+				{
+					id: "141766D5894746C8"
+					item: { count: 1, id: "minecraft:wooden_axe" }
+					type: "item"
+				}
+				{
+					count: 4L
+					icon: {
+						id: "minecraft:stripped_oak_log"
+					}
+					id: "28964538A56DFE6B"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:stripped_logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1AE9421C32D00843"]
+			id: "19B1482730F57B7D"
+			rewards: [{
+				count: 2
+				id: "1C2243B06D25105A"
+				item: {
+					count: 1
+					id: "kubejs:primitive_detector_template"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "6A67881BC14D7F48"
+				item: { count: 1, id: "kubejs:primitive_detector_template" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"19B1482730F57B7D"
+				"6C177752F4C333DB"
+			]
+			id: "0E55FD9C6027434A"
+			tasks: [
+				{
+					id: "75959AE097053F4A"
+					item: { count: 1, id: "kubejs:primitive_detector_furnace" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "74FFBFC6BD53AA86"
+					item: { count: 1, id: "minecraft:raw_iron" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -1.5d
 		}
 	]
 }
