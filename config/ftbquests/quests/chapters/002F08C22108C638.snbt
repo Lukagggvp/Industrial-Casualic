@@ -61,7 +61,7 @@
 				}
 			]
 			x: 2.0d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -76,13 +76,13 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["172EB2CDAAA751D8"]
 			id: "168242D747533141"
 			rewards: [{
-				count: 16
+				count: 8
 				id: "446FEE7BC3E1A9DB"
 				item: {
 					count: 1
@@ -114,9 +114,79 @@
 					item: { count: 1, id: "minecraft:gravel" }
 					type: "item"
 				}
+				{
+					count: 8L
+					id: "48285AD8B0AAA4E9"
+					item: { count: 1, id: "minecraft:flint" }
+					type: "item"
+				}
 			]
 			x: 2.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["168242D747533141"]
+			id: "72A0FB233CF0B7F8"
+			tasks: [{
+				count: 32L
+				id: "27D6B12EBA1E8584"
+				item: { count: 1, id: "kubejs:cast_compound" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"72A0FB233CF0B7F8"
+				"4E43C4BF501D9B90"
+			]
+			id: "6C177752F4C333DB"
+			tasks: [
+				{
+					count: 32L
+					id: "113A46826C7A7DA6"
+					item: { count: 1, id: "casting:black_brick" }
+					type: "item"
+				}
+				{
+					id: "0114D12DBDCFBC0A"
+					item: { count: 1, id: "casting:controller" }
+					type: "item"
+				}
+				{
+					id: "6C3FF060CD83A458"
+					item: { count: 1, id: "casting:solidifier" }
+					type: "item"
+				}
+				{
+					id: "22406EFE442CD47A"
+					item: { count: 1, id: "casting:tank" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F24E9377FABB04F"]
+			id: "4E43C4BF501D9B90"
+			tasks: [
+				{
+					count: 4L
+					id: "45E8D78D463D73F3"
+					item: { count: 1, id: "kubejs:charcoal_sand_compound" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "22F1C7CA4B9D4848"
+					item: { count: 1, id: "ae2:quartz_glass" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
 		}
 	]
 }
