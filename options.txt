@@ -22,8 +22,8 @@ narrator:0
 particles:0
 reducedDebugInfo:false
 renderClouds:"true"
-renderDistance:32
-simulationDistance:9
+renderDistance:8
+simulationDistance:8
 screenEffectScale:1.0
 soundDevice:""
 autoJump:false
@@ -125,6 +125,61 @@ key_key.trashslot.toggle:key.keyboard.backslash
 key_key.trashslot.toggle_lock:key.keyboard.unknown
 key_key.trashslot.delete:key.keyboard.delete
 key_key.trashslot.delete_all:key.keyboard.delete:SHIFT
+key_key.sophisticatedcore.sort:key.keyboard.keypad.subtract
+key_gui.xaero_open_map:key.keyboard.m
+key_gui.xaero_open_settings:key.keyboard.right.bracket
+key_gui.xaero_world_map_server_settings:key.keyboard.unknown
+key_gui.xaero_map_zoom_in:key.keyboard.unknown
+key_gui.xaero_map_zoom_out:key.keyboard.unknown
+key_gui.xaero_quick_confirm:key.keyboard.right.shift
+key_gui.xaero_toggle_dimension:key.keyboard.unknown
+key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
+key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.c
+key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
+key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
+key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
+key_key.shetiphiancore.tool.next:key.keyboard.page.up
+key_key.shetiphiancore.tool.previous:key.keyboard.page.down
+key_key.ok_zoomer.zoom:key.keyboard.c
+key_key.ok_zoomer.decrease_zoom:key.keyboard.unknown
+key_key.ok_zoomer.increase_zoom:key.keyboard.unknown
+key_key.ok_zoomer.reset_zoom:key.keyboard.unknown
+key_iris.keybind.reload:key.keyboard.r
+key_iris.keybind.toggleShaders:key.keyboard.k
+key_iris.keybind.shaderPackSelection:key.keyboard.o
+key_key.casting.helmet_hotkey:key.keyboard.unknown
+key_key.casting.chestplate_hotkey:key.keyboard.unknown
+key_key.casting.leggings_hotkey:key.keyboard.unknown
+key_key.casting.boots_hotkey:key.keyboard.unknown
+key_Change mode key:key.keyboard.g
+key_Fly Key:key.keyboard.f
+key_BlackList View Key:key.keyboard.x
+key_Vertical Key:key.keyboard.k
+key_Save move Key:key.keyboard.l
+key_BlackList Key:key.keyboard.j
+key_Streak Key:key.keyboard.v
+key_Armor Key:key.keyboard.m
+key_Boots Key:key.keyboard.b
+key_Leggings Key:key.keyboard.n
+key_ALT Key:key.keyboard.left.alt
+key_key.ftbultimine:key.keyboard.grave.accent
+key_ftbultimine.change_shape.next:key.keyboard.up
+key_ftbultimine.change_shape.prev:key.keyboard.down
+key_key.ultimine_addition.show_progression_bar:key.keyboard.left.alt
+key_key.ftbteams.open_gui:key.keyboard.unknown
+key_key.ftbchunks.map:key.keyboard.keypad.subtract
+key_key.ftbchunks.toggle_minimap:key.keyboard.unknown
+key_key.ftbchunks.claim_manager:key.keyboard.unknown
+key_key.ftbchunks.minimap.zoomIn:key.keyboard.equal
+key_key.ftbchunks.minimap.zoomOut:key.keyboard.minus
+key_key.ftbchunks.add_waypoint:key.keyboard.unknown
+key_key.ftbchunks.waypoint_manager:key.keyboard.unknown
+key_key.ftbquests.quests:key.keyboard.unknown
+key_key.sophisticatedsorter.sort:key.keyboard.keypad.subtract
+key_key.sophisticatedsorter.disable:scancode.85
 key_key.jei.toggleOverlay:key.keyboard.o:CONTROL
 key_key.jei.focusSearch:key.keyboard.f:CONTROL
 key_key.jei.previousPage:key.keyboard.unknown
@@ -156,31 +211,9 @@ key_key.jei.previousCategory:key.keyboard.page.up:SHIFT
 key_key.jei.nextCategory:key.keyboard.page.down:SHIFT
 key_key.jei.closeRecipeGui:key.keyboard.escape
 key_key.jei.copy.recipe.id:key.keyboard.unknown
-key_key.sophisticatedcore.sort:key.mouse.middle
-key_gui.xaero_open_map:key.keyboard.m
-key_gui.xaero_open_settings:key.keyboard.right.bracket
-key_gui.xaero_world_map_server_settings:key.keyboard.unknown
-key_gui.xaero_map_zoom_in:key.keyboard.unknown
-key_gui.xaero_map_zoom_out:key.keyboard.unknown
-key_gui.xaero_quick_confirm:key.keyboard.right.shift
-key_gui.xaero_toggle_dimension:key.keyboard.unknown
 key_key.kubejs.kubedex:key.keyboard.k
 key_key.configured.open_mod_list:key.keyboard.unknown
-key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
-key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.c
-key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
-key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
 key_key.guideme.guide:key.keyboard.g
-key_key.shetiphiancore.tool.next:key.keyboard.page.up
-key_key.shetiphiancore.tool.previous:key.keyboard.page.down
-key_key.ok_zoomer.zoom:key.keyboard.c
-key_key.ok_zoomer.decrease_zoom:key.keyboard.unknown
-key_key.ok_zoomer.increase_zoom:key.keyboard.unknown
-key_key.ok_zoomer.reset_zoom:key.keyboard.unknown
 key_key.jade.config:key.keyboard.keypad.0
 key_key.jade.show_overlay:key.keyboard.keypad.1
 key_key.jade.toggle_liquid:key.keyboard.keypad.2
@@ -223,41 +256,8 @@ key_gui.xaero_alternative_list_players:key.keyboard.unknown
 key_gui.xaero_toggle_tracked_players_on_map:key.keyboard.unknown
 key_gui.xaero_toggle_tracked_players_in_world:key.keyboard.unknown
 key_gui.xaero_toggle_pac_chunk_claims:key.keyboard.unknown
-key_iris.keybind.reload:key.keyboard.r
-key_iris.keybind.toggleShaders:key.keyboard.k
-key_iris.keybind.shaderPackSelection:key.keyboard.o
-key_key.casting.helmet_hotkey:key.keyboard.unknown
-key_key.casting.chestplate_hotkey:key.keyboard.unknown
-key_key.casting.leggings_hotkey:key.keyboard.unknown
-key_key.casting.boots_hotkey:key.keyboard.unknown
 key_key.enderchests.open.bag:key.keyboard.unknown
 key_key.enderchests.open.pouch:key.keyboard.unknown
-key_Change mode key:key.keyboard.g
-key_Fly Key:key.keyboard.f
-key_BlackList View Key:key.keyboard.x
-key_Vertical Key:key.keyboard.k
-key_Save move Key:key.keyboard.l
-key_BlackList Key:key.keyboard.j
-key_Streak Key:key.keyboard.v
-key_Armor Key:key.keyboard.m
-key_Boots Key:key.keyboard.b
-key_Leggings Key:key.keyboard.n
-key_ALT Key:key.keyboard.left.alt
-key_key.ftbultimine:key.keyboard.grave.accent
-key_ftbultimine.change_shape.next:key.keyboard.up
-key_ftbultimine.change_shape.prev:key.keyboard.down
-key_key.ultimine_addition.show_progression_bar:key.keyboard.left.alt
-key_key.ftbteams.open_gui:key.keyboard.unknown
-key_key.ftbchunks.map:key.keyboard.keypad.subtract
-key_key.ftbchunks.toggle_minimap:key.keyboard.unknown
-key_key.ftbchunks.claim_manager:key.keyboard.unknown
-key_key.ftbchunks.minimap.zoomIn:key.keyboard.equal
-key_key.ftbchunks.minimap.zoomOut:key.keyboard.minus
-key_key.ftbchunks.add_waypoint:key.keyboard.unknown
-key_key.ftbchunks.waypoint_manager:key.keyboard.unknown
-key_key.ftbquests.quests:key.keyboard.unknown
-key_key.sophisticatedsorter.sort:scancode.82
-key_key.sophisticatedsorter.disable:scancode.85
 key_key.entityculling.toggle:key.keyboard.unknown
 soundCategory_master:1.0
 soundCategory_music:0.0

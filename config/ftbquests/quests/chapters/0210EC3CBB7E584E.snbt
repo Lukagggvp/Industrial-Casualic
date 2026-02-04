@@ -140,10 +140,7 @@
 		{
 			dependencies: ["50D603BA72F01035"]
 			icon: {
-				components: {
-					"ftbquests:icon": "ftbquests:textures/gui/info.png"
-				}
-				id: "ftbquests:custom_icon"
+				id: "naturescompass:naturescompass"
 			}
 			id: "54A3D91AC03317DC"
 			tasks: [{

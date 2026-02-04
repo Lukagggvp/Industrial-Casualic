@@ -6,13 +6,117 @@
 	id: "002F08C22108C638"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		id: "172EB2CDAAA751D8"
-		tasks: [{
-			id: "01BFD89CD05DF260"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["0210EC3CBB7E584E"]
+			id: "172EB2CDAAA751D8"
+			tasks: [
+				{
+					count: 4L
+					icon: {
+						id: "minecraft:oak_log"
+					}
+					id: "755FF6D7FD157BB5"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					count: 4L
+					icon: {
+						id: "minecraft:oak_planks"
+					}
+					id: "6D0F1F43C0C18CCC"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:planks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5C7789CDEDBCDB46"
+					item: { count: 1, id: "minecraft:stick" }
+					type: "item"
+				}
+				{
+					id: "79EA6FCB804A765B"
+					item: { count: 1, id: "minecraft:wooden_pickaxe" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["172EB2CDAAA751D8"]
+			id: "6CA009DDB65B9935"
+			tasks: [
+				{
+					count: 16L
+					id: "4177C2A6C59D231D"
+					item: { count: 1, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+				{
+					id: "43CE15CAF52BD2C0"
+					item: { count: 1, id: "minecraft:furnace" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6CA009DDB65B9935"
+				"172EB2CDAAA751D8"
+			]
+			id: "7F24E9377FABB04F"
+			tasks: [{
+				count: 4L
+				id: "793754662B9233FC"
+				item: { count: 1, id: "minecraft:charcoal" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["172EB2CDAAA751D8"]
+			id: "168242D747533141"
+			rewards: [{
+				count: 16
+				id: "446FEE7BC3E1A9DB"
+				item: {
+					count: 1
+					id: "minecraft:flint"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "67B33539D5589336"
+					item: { count: 1, id: "minecraft:wooden_shovel" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "2B6A9AE3958E00F8"
+					item: { count: 1, id: "minecraft:clay_ball" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "66380362533A32B1"
+					item: { count: 1, id: "minecraft:sand" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4AEC1A6A47589435"
+					item: { count: 1, id: "minecraft:gravel" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -2.0d
+		}
+	]
 }
