@@ -5,4 +5,4 @@ StartupEvents.registry('item', e => {
 	e.create('primitive_detector_furnace').displayName('Primitive Detector: Furnace')
 })
 
-Platform.mods.kubejs.name = 'Industrial Casualic'
+Platform.mods.kubejs.name = 'Industrial Casualic';
