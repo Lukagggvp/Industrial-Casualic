@@ -76,7 +76,7 @@
 				}
 			]
 			x: 2.0d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["172EB2CDAAA751D8"]
@@ -122,7 +122,7 @@
 				}
 			]
 			x: 2.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["168242D747533141"]
@@ -133,8 +133,8 @@
 				item: { count: 1, id: "kubejs:cast_compound" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 0.0d
+			x: 6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -166,11 +166,14 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["6CA009DDB65B9935"]
+			dependencies: [
+				"6CA009DDB65B9935"
+				"168242D747533141"
+			]
 			id: "4E43C4BF501D9B90"
 			tasks: [
 				{
@@ -182,12 +185,12 @@
 				{
 					count: 4L
 					id: "22F1C7CA4B9D4848"
-					item: { count: 1, id: "ae2:quartz_glass" }
+					item: { count: 1, id: "casting:black_brick_glass" }
 					type: "item"
 				}
 			]
 			x: 4.0d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["172EB2CDAAA751D8"]
@@ -251,7 +254,7 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
+			x: 8.0d
 			y: -2.0d
 		}
 		{
@@ -278,10 +281,11 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6C177752F4C333DB"]
+			hide_until_deps_complete: true
 			id: "567740B614EF95D7"
 			tasks: [{
 				id: "7B99C6CC061E7CF3"
@@ -289,7 +293,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 0.0d
+			y: 2.0d
 		}
 	]
 }
