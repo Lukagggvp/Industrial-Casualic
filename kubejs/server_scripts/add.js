@@ -69,6 +69,14 @@ ServerEvents.recipes(e => {
 		A: 'casting:black_brick',
 		B: 'ae2:quartz_glass'
 	}).id('casting:tank');
+
+	e.shaped('industrialupgrade:itemcell/itemcell', [
+		' A ',
+		'ABA',
+		' A '], {
+		A: 'minecraft:copper_ingot',
+		B: 'ae2:quartz_glass'
+	}).id('industrialupgrade:industrialupgrade_1667');
 	
 	e.smelting('ae2:quartz_glass', 'kubejs:charcoal_sand_compound').id('ae2:decorative/quartz_glass');
 	e.smelting('casting:black_brick', 'kubejs:cast_compound').id('casting:smelting/black_brick');

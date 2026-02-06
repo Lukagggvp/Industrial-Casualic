@@ -3,6 +3,9 @@
 	default_quest_shape: ""
 	filename: "002F08C22108C638"
 	group: ""
+	icon: {
+		id: "kubejs:primitive_detector_template"
+	}
 	id: "002F08C22108C638"
 	order_index: 1
 	quest_links: [ ]
@@ -63,6 +66,12 @@
 					count: 4L
 					id: "1CB25E071A845134"
 					item: { count: 1, id: "minecraft:charcoal" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0CA14EFC1B94D959"
+					item: { count: 1, id: "minecraft:raw_copper" }
 					type: "item"
 				}
 			]
@@ -131,6 +140,7 @@
 			dependencies: [
 				"72A0FB233CF0B7F8"
 				"4E43C4BF501D9B90"
+				"2DFF86767ADB6027"
 			]
 			id: "6C177752F4C333DB"
 			tasks: [
@@ -199,7 +209,7 @@
 				}
 			]
 			x: 2.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1AE9421C32D00843"]
@@ -220,7 +230,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -242,7 +252,44 @@
 				}
 			]
 			x: 6.0d
-			y: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4E43C4BF501D9B90"]
+			id: "2DFF86767ADB6027"
+			rewards: [{
+				id: "2A762E6CD29D9882"
+				item: {
+					components: {
+						"industrialupgrade:fluid": {
+							amount: 1000
+							id: "minecraft:lava"
+						}
+					}
+					count: 1
+					id: "industrialupgrade:itemcell/itemcell"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "756182A2497D79A0"
+				item: { count: 1, id: "industrialupgrade:itemcell/itemcell" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C177752F4C333DB"]
+			id: "567740B614EF95D7"
+			tasks: [{
+				id: "7B99C6CC061E7CF3"
+				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "minecraft:water" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
 		}
 	]
 }
