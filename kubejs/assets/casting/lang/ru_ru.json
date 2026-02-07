@@ -48,5 +48,8 @@
 	"item.casting.nugget_mold": "Nugget Mold",
 	"item.casting.plate_mold": "Plate Mold",
 	"item.casting.rod_mold": "Rod Mold",
-	"item.casting.wire_mold": "Wire Mold"
+	"item.casting.wire_mold": "Wire Mold",
+
+	
+	"block.casting.molten_black_brick": "Расплавленный печной кирпич"
 }

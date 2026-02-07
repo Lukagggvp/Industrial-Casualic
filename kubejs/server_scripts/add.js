@@ -1,4 +1,48 @@
 ServerEvents.recipes(e => {
+	function meltingVanilla(ores, types) {
+		for (let ore of ores) {
+			for (let type of types) {
+				let input;
+				let output;
+				let idSuffix;
+
+				if (type === 'raw_material') {
+					input = `minecraft:raw_${ore}`;
+					output = `144x industrialupgrade:iufluid${ore}`;
+					idSuffix = 'from_raw_material';
+				} else if (type === 'raw_storage_block') {
+					input = `minecraft:raw_${ore}_block`;
+					output = `1296x industrialupgrade:iufluid${ore}`;
+					idSuffix = 'from_raw_storage_block';
+				} else if (type === 'storage_block') {
+					input = `minecraft:${ore}_block`;
+					output = `1296x industrialupgrade:iufluid${ore}`;
+					idSuffix = `from_${type}_storage_block`;
+				} else if (type === 'nugget') {
+					if (ore === 'copper') {
+						continue;
+					} else {
+						input = `minecraft:${ore}_${type}`;
+						output = `16x industrialupgrade:iufluid${ore}`;
+						idSuffix = `from_${type}`;
+					};
+				} else if (type === 'plate') {
+					input = `industrialupgrade:itemplates/${ore}_${type}`;
+					output = `144x industrialupgrade:iufluid${ore}`;
+					idSuffix = `from_${type}`;
+				} else {
+					input = `minecraft:${ore}_${type}`;
+					output = `144x industrialupgrade:iufluid${ore}`;
+					idSuffix = `from_${type}`;
+				}
+
+				e.recipes.casting
+				.melting(input, output, 1000)
+				.id(`casting:melting/${ore}/${idSuffix}`);
+			}
+		}
+	}
+
 	const woods = [
 		'oak',
 		'spruce',
@@ -8,6 +52,22 @@ ServerEvents.recipes(e => {
 		'dark_oak',
 		'mangrove',
 		'cherry'
+	];
+
+	const vanillaOre = [
+		'copper',
+		'iron',
+		'gold'
+	];
+
+	const types = [
+		'raw_material',
+		'raw_storage_block',
+		'ingot',
+		'ore',
+		'storage_block',
+		'nugget',
+		'plate'
 	];
 
 	e.shapeless('4x kubejs:charcoal_sand_compound', [
@@ -82,6 +142,18 @@ ServerEvents.recipes(e => {
 	e.smelting('casting:black_brick', 'kubejs:cast_compound').id('casting:smelting/black_brick');
 	
 	e.recipes.casting.solidifier('kubejs:primitive_detector_template', '360x casting:molten_iron', 'kubejs:primitive_detector_furnace');
+
+	e.recipes.casting.melting('kubejs:cast_compound', '288x casting:molten_black_brick', 1000).id('casting:melting/black_brick/from_clay');
+	e.recipes.casting.melting('casting:black_brick', '144x casting:molten_black_brick', 1000).id('casting:melting/black_brick/from_black_brick');
+	e.recipes.casting.melting('casting:black_bricks', '576x casting:molten_black_brick', 1000).id('casting:melting/black_brick/from_black_bricks');
+
+	e.recipes.casting.coolant('10x industrialupgrade:iufluidcoolant', 100)
+	e.recipes.casting.coolant('10x industrialupgrade:iufluidhelium', 50)
+	e.recipes.casting.coolant('10x industrialupgrade:iufluidcryogen', 10)
+
+	e.recipes.casting.fuel('10x industrialupgrade:iufluidpahoehoe_lava', 1500, 150)
+
+	meltingVanilla(vanillaOre, types);
 });
 
 ServerEvents.tags('block', e => {
