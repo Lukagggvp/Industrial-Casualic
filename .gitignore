@@ -7,6 +7,7 @@
 /.mixin.out
 /defaultconfigs
 /kubejs/README.txt
+/kubejs/config/probe-settings.json
 /ftbbackups3
 /xaero
 /screenshots
