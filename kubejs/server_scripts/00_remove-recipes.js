@@ -94,8 +94,34 @@ ServerEvents.recipes(e => {
 	e.remove({ output: 'casting:mixer' });
 	e.remove({ output: 'casting:multiblock_fuel_tank' });
 	e.remove({ output: 'casting:equipment_modifier' });
+	e.remove({ output: 'brickfurnace:brick_blast_furnace'});
+	e.remove({ output: 'brickfurnace:brick_smoker' });
+	e.remove({ output: 'minecraft:furnace' });
 
 	e.remove({ id: 'casting:ingot_mold' });
-	//e.remove({ output: '#c:ingots', type: 'minecraft:smelting' });
-	e.remove({ output: '#c:ingots', type: 'minecraft:blasting' });
+	e.remove({ id: 'minecraft:iron_nugget_from_smelting' });
+	e.remove({ id: 'minecraft:gold_nugget_from_smelting' });
+
+	e.remove({ type: 'minecraft:blasting' });
+
+	//timed remove
+	e.remove({ input: Fluid.of('casting:molten_osmium') });
+	e.remove({ input: Fluid.of('casting:molten_platinum') });
+	e.remove({ input: Fluid.of('casting:molten_nickel') });
+	e.remove({ input: Fluid.of('casting:molten_lead') });
+	e.remove({ input: Fluid.of('casting:molten_zinc') });
+	e.remove({ input: Fluid.of('casting:molten_iridium') });
+	e.remove({ input: Fluid.of('casting:molten_silver') });
+	e.remove({ input: Fluid.of('casting:molten_tin') });
+	e.remove({ input: Fluid.of('casting:molten_experience') });
+	
+	e.remove({ output: Fluid.of('casting:molten_osmium') });
+	e.remove({ output: Fluid.of('casting:molten_platinum') });
+	e.remove({ output: Fluid.of('casting:molten_nickel') });
+	e.remove({ output: Fluid.of('casting:molten_lead') });
+	e.remove({ output: Fluid.of('casting:molten_zinc') });
+	e.remove({ output: Fluid.of('casting:molten_iridium') });
+	e.remove({ output: Fluid.of('casting:molten_silver') });
+	e.remove({ output: Fluid.of('casting:molten_tin') });
+	e.remove({ output: Fluid.of('casting:molten_experience') });
 })

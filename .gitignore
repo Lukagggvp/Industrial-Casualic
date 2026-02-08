@@ -30,6 +30,10 @@
 !/config/ftbquests**
 /config/ftbquests-client.snbt
 
+!/config/jei
+!/config/jei/recipe-category-sort-order.ini
+
+
 /command_history.txt
 /.vscode
 /usercache.json

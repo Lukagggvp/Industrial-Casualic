@@ -17,7 +17,11 @@ ServerEvents.recipes(e => {
 				} else if (type === 'storage_block') {
 					input = `minecraft:${ore}_block`;
 					output = `1296x industrialupgrade:iufluid${ore}`;
-					idSuffix = `from_${type}_storage_block`;
+					idSuffix = `from_${type}`;
+				} else if (type === 'ores') {
+					input = `#c:${type}/${ore}`;
+					output = `144x industrialupgrade:iufluid${ore}`;
+					idSuffix = `from_${type.substring(0, type.length - 1)}`;
 				} else if (type === 'nugget') {
 					if (ore === 'copper') {
 						continue;
@@ -43,6 +47,23 @@ ServerEvents.recipes(e => {
 		}
 	}
 
+	function brick_smelting(output, input, xp, cookingtime) {
+		let ingredients
+
+		if (input[0] === '#') {
+			ingredients = { tag: input.substring(1) }
+		} else {
+			ingredients = { item: input } }
+
+		e.custom({
+			type: "brickfurnace:smelting",
+			ingredient: ingredients,
+			result: { id: output },
+			experience: xp || 0.6,
+			cookingtime: cookingtime || 200
+		})
+	}
+
 	const woods = [
 		'oak',
 		'spruce',
@@ -64,7 +85,7 @@ ServerEvents.recipes(e => {
 		'raw_material',
 		'raw_storage_block',
 		'ingot',
-		'ore',
+		'ores',
 		'storage_block',
 		'nugget',
 		'plate'
@@ -113,7 +134,7 @@ ServerEvents.recipes(e => {
 		'ABA'], {
 		A: 'casting:black_brick',
 		B: 'casting:black_bricks',
-		C: 'minecraft:furnace'
+		C: 'brickfurnace:brick_furnace'
 	}).id('casting:controller');
 
 	e.shaped('casting:solidifier', [
@@ -142,10 +163,19 @@ ServerEvents.recipes(e => {
 
 	e.shaped('casting:ingot_mold', [
 		' A ',
-		'AAA',
+		'ABA',
 		' A '], {
-		A: 'casting:black_brick'
+		A: 'casting:black_brick',
+		B: 'minecraft:iron_ingot'
 	}).id('casting:ingot_mold_bricks');
+
+	e.shaped('casting:nugget_mold', [
+		' A ',
+		'ABA',
+		' A '], {
+		A: 'casting:black_brick',
+		B: 'minecraft:iron_nugget'
+	}).id('casting:nugget_mold');
 
 	e.shaped('minecraft:blast_furnace', [
 		'AAA',
@@ -157,11 +187,17 @@ ServerEvents.recipes(e => {
 	}).id('minecraft:blast_furnace');
 	
 	e.smelting('casting:black_brick_glass', 'kubejs:charcoal_sand_compound').id('casting:black_brick_glass');
-	e.smelting('casting:black_brick', 'kubejs:cast_compound').id('casting:smelting/black_brick');
+	e.smelting('casting:black_brick', 'kubejs:cast_compound').id('casting:smelting/black_brick')
 
 	e.blasting('minecraft:iron_ingot', 'kubejs:raw_iron_ingot');
 
-	e.campfireCooking('minecraft:brick', 'minecraft:clay', 0, 200);
+	e.campfireCooking('minecraft:brick', 'minecraft:clay_ball', 0, 200);
+
+	brick_smelting('casting:black_brick_glass', 'kubejs:charcoal_sand_compound');
+	brick_smelting('casting:black_brick', 'kubejs:cast_compound');
+	brick_smelting('minecraft:charcoal', '#minecraft:logs_that_burn');
+	brick_smelting('minecraft:copper_ingot', 'minecraft:raw_copper');
+	brick_smelting('minecraft:copper_ingot', '#c:ores/copper');
 	
 	e.recipes.casting.solidifier('kubejs:primitive_detector_template', '576x casting:molten_iron', 'kubejs:primitive_detector_furnace');
 	e.recipes.casting.solidifier('casting:ingot_mold', '144x casting:molten_black_brick', 'casting:black_brick').id('casting:solidifier/black_brick/black_brick');

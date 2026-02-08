@@ -48,7 +48,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["172EB2CDAAA751D8"]
+			dependencies: [
+				"172EB2CDAAA751D8"
+				"168242D747533141"
+			]
 			id: "6CA009DDB65B9935"
 			tasks: [
 				{
@@ -59,7 +62,7 @@
 				}
 				{
 					id: "43CE15CAF52BD2C0"
-					item: { count: 1, id: "minecraft:furnace" }
+					item: { count: 1, id: "brickfurnace:brick_furnace" }
 					type: "item"
 				}
 				{
@@ -139,7 +142,6 @@
 		{
 			dependencies: [
 				"72A0FB233CF0B7F8"
-				"4E43C4BF501D9B90"
 				"2DFF86767ADB6027"
 			]
 			id: "6C177752F4C333DB"
@@ -170,10 +172,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"6CA009DDB65B9935"
-				"168242D747533141"
-			]
+			dependencies: ["6CA009DDB65B9935"]
 			id: "4E43C4BF501D9B90"
 			tasks: [
 				{
@@ -232,7 +231,7 @@
 				item: { count: 1, id: "kubejs:primitive_detector_template" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 6.0d
 			y: -2.0d
 		}
 		{
@@ -298,25 +297,34 @@
 		{
 			dependencies: ["0E55FD9C6027434A"]
 			id: "3A96C1C1B9698CDA"
-			tasks: [{
-				id: "07CE8D5DE141405B"
-				item: { count: 1, id: "minecraft:blast_furnace" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "07CE8D5DE141405B"
+					item: { count: 1, id: "minecraft:blast_furnace" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "35B2E019662FCCDB"
+					item: { count: 1, id: "kubejs:raw_iron_ingot" }
+					type: "item"
+				}
+			]
 			x: 10.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["3A96C1C1B9698CDA"]
 			id: "5CB6752BCE0CA4C6"
+			shape: "hexagon"
 			tasks: [{
 				count: 4L
 				id: "4949F0AF1575A4E9"
 				item: { count: 1, id: "minecraft:iron_ingot" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: -2.0d
+			x: 10.0d
+			y: 0.0d
 		}
 	]
 }
