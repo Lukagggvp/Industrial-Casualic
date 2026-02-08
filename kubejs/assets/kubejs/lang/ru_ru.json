@@ -2,5 +2,6 @@
 	"item.kubejs.charcoal_sand_compound": "Угольно-песочная смесь",
 	"item.kubejs.cast_compound": "Печнная смесь",
 	"item.kubejs.primitive_detector_template": "Примитивный шаблон датчика",
-	"item.kubejs.primitive_detector_furnace": "Примитивный датчик: Печь"
+	"item.kubejs.primitive_detector_furnace": "Примитивный датчик: Печь",
+	"item.kubejs.raw_iron_ingot": "Грязный железный слиток"
 }

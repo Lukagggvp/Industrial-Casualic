@@ -1,0 +1,70 @@
+RecipeViewerEvents.removeEntries('item', e => {
+	e.remove('@ultimine_addition');
+	e.remove('casting:molten_emerald_bucket');
+	e.remove('casting:molten_debris_bucket');
+	e.remove('casting:molten_lapis_bucket');
+	e.remove('casting:molten_redstone_bucket');
+	e.remove('casting:molten_electrum_bucket');
+	e.remove('casting:molten_coal_bucket');
+	e.remove('casting:molten_invar_bucket');
+	e.remove('casting:molten_ruby_bucket');
+	e.remove('casting:iced_water_bucket');
+	e.remove('casting:molten_certus_quartz_bucket');
+	e.remove('casting:molten_charged_certus_quartz_bucket');
+	e.remove('casting:molten_uranium_bucket');
+	e.remove('casting:molten_fluix_bucket');
+	e.remove('casting:molten_obsidian_bucket');
+	e.remove('casting:molten_stone_bucket');
+	e.remove('casting:molten_silicon_bucket');
+	e.remove('casting:molten_soul_bucket');
+	e.remove('casting:molten_blaze_bucket');
+	e.remove('casting:molten_bronze_bucket');
+	e.remove('casting:molten_sapphire_bucket');
+	e.remove('casting:molten_quartz_bucket');
+	e.remove('casting:molten_steel_bucket');
+	e.remove('casting:chilled_water_bucket');
+	e.remove('casting:molten_diamond_bucket');
+	e.remove('casting:molten_netherite_bucket');
+	e.remove('casting:molten_glowstone_bucket');
+	e.remove('casting:molten_glass_bucket');
+	e.remove('casting:molten_end_stone_bucket');
+	e.remove('casting:molten_ender_bucket');
+})
+
+RecipeViewerEvents.removeEntries('fluid', e => {
+	e.remove('casting:molten_emerald');
+	e.remove('casting:molten_debris');
+	e.remove('casting:molten_lapis');
+	e.remove('casting:molten_redstone');
+	e.remove('casting:molten_electrum');
+	e.remove('casting:molten_coal');
+	e.remove('casting:molten_invar');
+	e.remove('casting:molten_ruby');
+	e.remove('casting:iced_water');
+	e.remove('casting:molten_certus_quartz');
+	e.remove('casting:molten_charged_certus_quartz');
+	e.remove('casting:molten_uranium');
+	e.remove('casting:molten_fluix');
+	e.remove('casting:molten_obsidian');
+	e.remove('casting:molten_stone');
+	e.remove('casting:molten_silicon');
+	e.remove('casting:molten_soul');
+	e.remove('casting:molten_blaze');
+	e.remove('casting:molten_bronze');
+	e.remove('casting:molten_sapphire');
+	e.remove('casting:molten_quartz');
+	e.remove('casting:molten_steel');
+	e.remove('casting:chilled_water');
+	e.remove('casting:molten_diamond');
+	e.remove('casting:molten_netherite');
+	e.remove('casting:molten_glowstone');
+	e.remove('casting:molten_glass');
+	e.remove('casting:molten_end_stone');
+	e.remove('casting:molten_ender');
+})
+
+RecipeViewerEvents.removeCategories(event => {
+	event.remove('jei:information');
+	event.remove('casting:mixing');
+	event.remove('casting:equipment_modifier');
+})

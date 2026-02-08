@@ -295,5 +295,28 @@
 			x: 8.0d
 			y: 2.0d
 		}
+		{
+			dependencies: ["0E55FD9C6027434A"]
+			id: "3A96C1C1B9698CDA"
+			tasks: [{
+				id: "07CE8D5DE141405B"
+				item: { count: 1, id: "minecraft:blast_furnace" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3A96C1C1B9698CDA"]
+			id: "5CB6752BCE0CA4C6"
+			tasks: [{
+				count: 4L
+				id: "4949F0AF1575A4E9"
+				item: { count: 1, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
 	]
 }
