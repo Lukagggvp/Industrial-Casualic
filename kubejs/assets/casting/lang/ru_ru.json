@@ -38,18 +38,16 @@
 	"gui.casting.jei.multiblock_controller_output": "",
 	"gui.casting.jei.simple_controller_output": "%smB",
 	"gui.casting.jei.solidifier": "Отливка",
-	"item.casting.ball_mold": "Ball Mold",
+	"item.casting.ball_mold": "Отливочная форма шара",
 	"item.casting.black_brick": "Печной кирпич",
-	"item.casting.block_mold": "Block Mold",
-	"item.casting.dust_mold": "Dust Mold",
-	"item.casting.gear_mold": "Gear Mold",
-	"item.casting.gem_mold": "Gem Mold",
-	"item.casting.ingot_mold": "Ingot Mold",
-	"item.casting.nugget_mold": "Nugget Mold",
-	"item.casting.plate_mold": "Plate Mold",
-	"item.casting.rod_mold": "Rod Mold",
-	"item.casting.wire_mold": "Wire Mold",
+	"item.casting.block_mold": "Отливочная форма блока",
+	"item.casting.gear_mold": "Отливочная форма шестерни",
+	"item.casting.gem_mold": "Отливочная форма кристалла",
+	"item.casting.ingot_mold": "Отливочная форма слитка",
+	"item.casting.nugget_mold": "Отливочная форма самородка",
+	"item.casting.plate_mold": "Отливочная форма пластины",
+	"item.casting.rod_mold": "Отливочная форма стержня",
+	"item.casting.wire_mold": "Отливочная форма провода",
 
-	
 	"block.casting.molten_black_brick": "Расплавленный печной кирпич"
 }

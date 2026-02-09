@@ -29,6 +29,8 @@ RecipeViewerEvents.removeEntries('item', e => {
 	e.remove('casting:molten_glass_bucket');
 	e.remove('casting:molten_end_stone_bucket');
 	e.remove('casting:molten_ender_bucket');
+	e.remove('casting:dust_mold');
+	e.remove('casting:repairing_mold');
 })
 
 RecipeViewerEvents.removeEntries('fluid', e => {

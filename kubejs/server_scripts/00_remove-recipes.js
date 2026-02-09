@@ -97,6 +97,8 @@ ServerEvents.recipes(e => {
 	e.remove({ output: 'brickfurnace:brick_blast_furnace'});
 	e.remove({ output: 'brickfurnace:brick_smoker' });
 	e.remove({ output: 'minecraft:furnace' });
+	e.remove({ output: 'casting:dust_mold' });
+	e.remove({ output: 'casting:repairing_mold' });
 
 	e.remove({ id: 'casting:ingot_mold' });
 	e.remove({ id: 'minecraft:iron_nugget_from_smelting' });

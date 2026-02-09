@@ -47,6 +47,42 @@ ServerEvents.recipes(e => {
 		}
 	}
 
+	function soldifierVanilla(ores, types) {
+		for (let ore of ores) {
+			for (let type of types) {
+				let input_mold;
+				let input_fluid;
+				let output;
+
+				if (type === 'ingot') {
+					input_mold = `casting:${type}_mold`;
+					input_fluid = `144x industrialupgrade:iufluid${ore}`;
+					output = `minecraft:${ore}_ingot`;
+				} else if (type === 'storage_block') {
+					input_mold = `casting:block_mold`;
+					input_fluid = `1296x industrialupgrade:iufluid${ore}`;
+					output = `minecraft:${ore}_block`;
+				} else if (type === 'nugget') {
+					if (ore === 'copper') {
+						continue;
+					} else {
+						input_mold = `casting:${type}_mold`;
+						input_fluid = `16x industrialupgrade:iufluid${ore}`;
+						output = `minecraft:${ore}_nugget`;
+					};
+				} else if (type === 'plate') {
+					input_mold = `casting:${type}_mold`;
+					input_fluid = `144x industrialupgrade:iufluid${ore}`;
+					output = `industrialupgrade:itemplates/${ore}_${type}`;
+				}
+
+				e.recipes.casting
+				.solidifier(input_mold, input_fluid, output)
+				.id(`casting:solidifier/${ore}/${type}`);
+			}
+		}
+	}
+
 	function brick_smelting(output, input, xp, cookingtime) {
 		let ingredients
 
@@ -91,7 +127,15 @@ ServerEvents.recipes(e => {
 		'plate'
 	];
 
+	const OutputTypes = [
+		'ingot',
+		'storage_block',
+		'nugget',
+		'plate'
+	];
+
 	meltingVanilla(vanillaOre, types);
+	soldifierVanilla(vanillaOre, OutputTypes);
 
 	e.shapeless('4x kubejs:charcoal_sand_compound', [
 		'3x minecraft:charcoal',
@@ -161,22 +205,6 @@ ServerEvents.recipes(e => {
 		B: 'casting:black_brick_glass'
 	}).id('industrialupgrade:industrialupgrade_1667');
 
-	e.shaped('casting:ingot_mold', [
-		' A ',
-		'ABA',
-		' A '], {
-		A: 'casting:black_brick',
-		B: 'minecraft:iron_ingot'
-	}).id('casting:ingot_mold_bricks');
-
-	e.shaped('casting:nugget_mold', [
-		' A ',
-		'ABA',
-		' A '], {
-		A: 'casting:black_brick',
-		B: 'minecraft:iron_nugget'
-	}).id('casting:nugget_mold');
-
 	e.shaped('minecraft:blast_furnace', [
 		'AAA',
 		'ABA',
@@ -203,6 +231,9 @@ ServerEvents.recipes(e => {
 	e.recipes.casting.solidifier('casting:ingot_mold', '144x casting:molten_black_brick', 'casting:black_brick').id('casting:solidifier/black_brick/black_brick');
 	e.recipes.casting.solidifier('casting:block_mold', '576x casting:molten_black_brick', 'casting:black_bricks').id('casting:solidifier/black_brick/block');
 	e.recipes.casting.solidifier('minecraft:raw_iron', '144x industrialupgrade:iufluidiron', 'kubejs:raw_iron_ingot');
+	e.recipes.casting.solidifier('minecraft:iron_ingot', '576x casting:molten_black_brick', 'casting:ingot_mold').id('casting:ingot_mold_bricks');
+	e.recipes.casting.solidifier('minecraft:iron_block', '576x casting:molten_black_brick', 'casting:block_mold').id('casting:block_mold');
+	e.recipes.casting.solidifier('minecraft:iron_nugget', '576x casting:molten_black_brick', 'casting:nugget_mold').id('casting:nugget_mold');
 
 	e.recipes.casting.melting('kubejs:cast_compound', '288x casting:molten_black_brick', 1000).id('casting:melting/black_brick/from_clay');
 	e.recipes.casting.melting('casting:black_brick', '144x casting:molten_black_brick', 1000).id('casting:melting/black_brick/from_black_brick');

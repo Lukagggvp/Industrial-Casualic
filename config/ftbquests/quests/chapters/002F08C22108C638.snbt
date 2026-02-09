@@ -72,8 +72,13 @@
 					type: "item"
 				}
 				{
+					id: "1225F1E40E09093F"
+					item: { count: 1, id: "minecraft:stone_pickaxe" }
+					type: "item"
+				}
+				{
 					count: 4L
-					id: "0CA14EFC1B94D959"
+					id: "47BBFB189F338773"
 					item: { count: 1, id: "minecraft:raw_copper" }
 					type: "item"
 				}
@@ -333,6 +338,70 @@
 				type: "item"
 			}]
 			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C177752F4C333DB"]
+			hide_until_deps_complete: true
+			id: "7E3E98F1B6809779"
+			tasks: [{
+				id: "361CD80FED1C4BA6"
+				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidpahoehoe_lava" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5CB6752BCE0CA4C6"]
+			id: "265CA9B7E90D401A"
+			tasks: [
+				{
+					id: "7B0A4FF1C43784A3"
+					item: { count: 1, id: "casting:ingot_mold" }
+					type: "item"
+				}
+				{
+					id: "2DEA7C48ABF3D42E"
+					item: { count: 1, id: "casting:nugget_mold" }
+					type: "item"
+				}
+				{
+					id: "010592F510CBBEB4"
+					item: { count: 1, id: "casting:block_mold" }
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["265CA9B7E90D401A"]
+			id: "55EE2BD0A0EADB5E"
+			tasks: [{
+				id: "0081E2CD08B14AD8"
+				item: { count: 1, id: "casting:plate_mold" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["55EE2BD0A0EADB5E"]
+			id: "7704F2DB2552E0F9"
+			tasks: [
+				{
+					id: "462460C6E591BD9C"
+					item: { count: 1, id: "casting:gear_mold" }
+					type: "item"
+				}
+				{
+					id: "0D0D91ACF94F85E0"
+					item: { count: 1, id: "casting:rod_mold" }
+					type: "item"
+				}
+			]
+			x: 16.0d
 			y: 0.0d
 		}
 	]
