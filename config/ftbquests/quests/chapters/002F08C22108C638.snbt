@@ -297,6 +297,15 @@
 		{
 			dependencies: ["0E55FD9C6027434A"]
 			id: "3A96C1C1B9698CDA"
+			rewards: [{
+				auto: "enabled"
+				command: "/sdm_stages add @a blast_furnace_unlocked"
+				icon: {
+					id: "minecraft:blast_furnace"
+				}
+				id: "325611408F58E7FA"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "07CE8D5DE141405B"
