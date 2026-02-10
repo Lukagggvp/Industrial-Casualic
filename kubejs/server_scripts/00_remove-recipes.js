@@ -103,6 +103,7 @@ ServerEvents.recipes(e => {
 	e.remove({ id: 'casting:ingot_mold' });
 	e.remove({ id: 'minecraft:iron_nugget_from_smelting' });
 	e.remove({ id: 'minecraft:gold_nugget_from_smelting' });
+	e.remove({ id: 'industrialupgrade:industrialupgrade_1650' });
 
 	e.remove({ type: 'minecraft:blasting' });
 

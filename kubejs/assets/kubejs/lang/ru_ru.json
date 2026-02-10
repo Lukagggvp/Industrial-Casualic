@@ -3,5 +3,7 @@
 	"item.kubejs.cast_compound": "Печнная смесь",
 	"item.kubejs.primitive_detector_template": "Примитивный шаблон датчика",
 	"item.kubejs.primitive_detector_furnace": "Примитивный датчик: Печь",
-	"item.kubejs.raw_iron_ingot": "Грязный железный слиток"
+	"item.kubejs.raw_iron_ingot": "Грязный железный слиток",
+	"item.kubejs.casing_mold": "Отливочная форма оболочки",
+	"item.kubejs.stick_iron": "Железная палка"
 }

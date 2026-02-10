@@ -378,11 +378,18 @@
 		{
 			dependencies: ["265CA9B7E90D401A"]
 			id: "55EE2BD0A0EADB5E"
-			tasks: [{
-				id: "0081E2CD08B14AD8"
-				item: { count: 1, id: "casting:plate_mold" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0081E2CD08B14AD8"
+					item: { count: 1, id: "casting:plate_mold" }
+					type: "item"
+				}
+				{
+					id: "45A227DDF6861631"
+					item: { count: 1, id: "kubejs:casing_mold" }
+					type: "item"
+				}
+			]
 			x: 14.0d
 			y: 0.0d
 		}
@@ -403,6 +410,62 @@
 			]
 			x: 16.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["265CA9B7E90D401A"]
+			id: "225B827280ED72A2"
+			tasks: [{
+				id: "35240717E7AB57B7"
+				item: { count: 1, id: "industrialupgrade:forge_hammer" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"265CA9B7E90D401A"
+				"0083F9F24CA594BD"
+			]
+			id: "71D965C3EEA27E47"
+			tasks: [{
+				id: "4BABC44A27CD1E37"
+				item: { count: 1, id: "industrialupgrade:block_anvil/block_anvil" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["225B827280ED72A2"]
+			id: "377EC37CA1ECAC1D"
+			tasks: [{
+				id: "038C6856DCF7FEAE"
+				item: { count: 1, id: "industrialupgrade:energy/iron_hammer" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5CB6752BCE0CA4C6"]
+			id: "0083F9F24CA594BD"
+			tasks: [
+				{
+					count: 4L
+					id: "74741E582A8EB442"
+					item: { count: 1, id: "industrialupgrade:raw_metals/raw_titanium" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5E558CC27179A940"
+					item: { count: 1, id: "industrialupgrade:itemingots/titanium_ingot" }
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 2.0d
 		}
 	]
 }
