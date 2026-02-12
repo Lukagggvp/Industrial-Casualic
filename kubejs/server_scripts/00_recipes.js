@@ -1,4 +1,34 @@
 ServerEvents.recipes(e => {
+	function parseInput(input, allowTags, amounts) {
+		let allowTag = allowTags || true;
+		let amount = amounts || 1;
+		let id = input.trim();
+		let result;
+	
+		const match = id.match(/^x(\d+)\s+(.+)$/)
+	
+		if (match) {
+			amount = Number(match[1])
+			id = match[2]
+		}
+	
+		if (allowTag && id[0] === '#') {
+			result = {
+				type: "tag",
+				id: id.substring(1),
+				amount: amount
+			}
+		} else {
+			result = {
+				type: "item",
+				id: id,
+				amount: amount
+			}
+		}
+	
+		return [result]
+	};
+
 	function meltingVanilla(ores, types) {
 		for (let ore of ores) {
 			for (let type of types) {
@@ -49,7 +79,7 @@ ServerEvents.recipes(e => {
 				.id(`casting:melting/${ore}/${idSuffix}`);
 			}
 		}
-	}
+	};
 
 	function soldifierVanilla(ores, types) {
 		for (let ore of ores) {
@@ -85,7 +115,7 @@ ServerEvents.recipes(e => {
 				.id(`casting:solidifier/${ore}/${type}`);
 			}
 		}
-	}
+	};
 
 	function meltingIU(ores, types) {
 		for (let ore of ores) {
@@ -149,7 +179,7 @@ ServerEvents.recipes(e => {
 				.id(`casting:melting/${ore}/${idSuffix}`);
 			}
 		}
-	}
+	};
 
 	function soldifierIU(ores, types) {
 		for (let ore of ores) {
@@ -197,7 +227,7 @@ ServerEvents.recipes(e => {
 				.id(`casting:solidifier/${ore}/${type}`);
 			}
 		}
-	}
+	};
 
 	function brick_smelting(output, input, xp, cookingtime) {
 		let ingredients
@@ -213,6 +243,19 @@ ServerEvents.recipes(e => {
 			result: { id: output },
 			experience: xp || 0.6,
 			cookingtime: cookingtime || 200
+		})
+	};
+
+	function universalIU_1io(machine, output, input, parameters) {
+		let ingredients = parseInput(input)
+		let outputs = parseInput(output, false)
+	
+		e.custom({
+			type: "industrialupgrade:universal_recipe",
+			recipe_type: machine,
+			inputs: ingredients,
+			outputs: outputs,
+			params: parameters || {}
 		})
 	}
 
@@ -383,6 +426,17 @@ ServerEvents.recipes(e => {
 		A: 'industrialupgrade:itemplates/iron_plate',
 		B: 'industrialupgrade:forge_hammer'
 	}).id('industrialupgrade:industrialupgrade_647');
+
+	e.shaped('industrialupgrade:energy_tools/spectral_bow',[
+		'ABA',
+		'CDC',
+		'EBE'], {
+		A: 'industrialupgrade:quantumitems2',
+		B: 'industrialupgrade:adv_spectral_box',
+		C: '#c:plates/mithril',
+		D: 'industrialupgrade:energy_tools/quantum_bow',
+		E: 'industrialupgrade:alloydoubleplate/duralumin'
+	}).id('industrialupgrade:industrialupgrade_81');
 	
 	e.smelting('casting:black_brick_glass', 'kubejs:charcoal_sand_compound').id('casting:black_brick_glass');
 	e.smelting('casting:black_brick', 'kubejs:cast_compound').id('casting:smelting/black_brick')
@@ -406,16 +460,23 @@ ServerEvents.recipes(e => {
 	e.recipes.casting.solidifier('minecraft:iron_nugget', '576x casting:molten_black_brick', 'casting:nugget_mold').id('casting:nugget_mold');
 	e.recipes.casting.solidifier('industrialupgrade:itemplates/iron_plate', '576x casting:molten_black_brick', 'casting:plate_mold').id('casting:plate_mold');
 	e.recipes.casting.solidifier('kubejs:stick_iron', '576x casting:molten_black_brick', 'casting:rod_mold').id('casting:rod_mold');
-	e.recipes.casting.solidifier('industrialupgrade:gear/iron', '576x casting:molten_black_brick', 'casting:gear_mold').id('casting:gear_mold');
+	//e.recipes.casting.solidifier('industrialupgrade:gear/iron', '576x casting:molten_black_brick', 'casting:gear_mold').id('casting:gear_mold');
 	e.recipes.casting.solidifier('industrialupgrade:casing/iron', '576x casting:molten_black_brick', 'kubejs:casing_mold').id('kubejs:casing_mold');
 
 	e.recipes.casting.melting('kubejs:cast_compound', '288x casting:molten_black_brick', 1000).id('casting:melting/black_brick/from_clay');
 	e.recipes.casting.melting('casting:black_brick', '144x casting:molten_black_brick', 1000).id('casting:melting/black_brick/from_black_brick');
 	e.recipes.casting.melting('casting:black_bricks', '576x casting:molten_black_brick', 1000).id('casting:melting/black_brick/from_black_bricks');
+	
+	e.recipes.casting.melting('kubejs:stick_iron', '72x industrialupgrade:iufluidiron', 1000).id('casting:melting/iron/from_rod');
+	e.recipes.casting.solidifier('casting:rod_mold', '72x industrialupgrade:iufluidiron', 'kubejs:stick_iron').id('casting:solidifier/iron/rod');
 
-	e.recipes.casting.coolant('10x industrialupgrade:iufluidcoolant', 100)
-	e.recipes.casting.coolant('10x industrialupgrade:iufluidhelium', 50)
-	e.recipes.casting.coolant('10x industrialupgrade:iufluidcryogen', 10)
+	e.recipes.casting.coolant('10x industrialupgrade:iufluidcoolant', 100);
+	e.recipes.casting.coolant('10x industrialupgrade:iufluidhelium', 50);
+	e.recipes.casting.coolant('10x industrialupgrade:iufluidcryogen', 10);
 
-	e.recipes.casting.fuel('10x industrialupgrade:iufluidpahoehoe_lava', 1500, 150)
+	e.recipes.casting.fuel('10x industrialupgrade:iufluidpahoehoe_lava', 1500, 150);
+
+	universalIU_1io('cutting', 'x2 kubejs:stick_iron', 'minecraft:iron_ingot');
+	universalIU_1io('extruder', 'x2 kubejs:stick_iron', 'minecraft:iron_ingot');
+	universalIU_1io('extruder', 'x2 kubejs:stick_iron', 'industrialupgrade:itemplates/iron_plate');
 });
